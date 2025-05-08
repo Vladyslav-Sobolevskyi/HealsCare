@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" href="./images/HealseCare_Logo_favicon.svg" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Heals Care</title>
+</head>
+
+<body>
+	<template id="template-loader">
+		<div id="loader"></div>
+	</template>
+
+	<div class="container">
+		<header class="header">
+			<div class="header__logo">
+				<img src="./images/HealseCare_Logo.svg" alt="logo">
+			</div>
+			<div class="header__buttons"></div>
+		</header>
+
+		<section class="filters">
+			<input id="filtered-input" type="text" class="filters__input" placeholder="Пошук за заголовком/вмістом">
+			
+			<select id="select-status" class="filters__select">
+				<option class="select__option" value="all-status">All status</option>
+				<option class="select__option" value="open">Open</option>
+				<option class="select__option" value="done">Done</option>
+			</select>
+	
+			<select id="select-urgency" class="filters__select">
+				<option class="select__option" value="all-urgency">All urgency</option>
+				<option class="select__option" value="urgent">Urgent</option>
+				<option class="select__option" value="priority">Priority</option>
+				<option class="select__option" value="regular">Regular</option>
+			</select>
+		</section>
+		
+		<section class="visit">
+			<div class="visit__start-block">
+				<h1 class="visit__title">No items have been added.</h1>
+				<img class="visit__image" src="./images/main_illustration.svg" alt="main_illustration">
+			</div>
+			<div id="root" class="visit__listener"></div>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<p>Heals Care</p>
+	</footer>
+	
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+	<script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

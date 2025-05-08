@@ -1,0 +1,1 @@
+export function toggleStartBlock(){const t=document.querySelector(".visit__listener"),e=document.querySelector(".visit__start-block");if(!t||!e)return;const l=t.querySelectorAll(".visit-card").length>0;e.style.display=l?"none":"flex"}
