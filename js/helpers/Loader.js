@@ -1,1 +1,0 @@
-class Loader{toggle(e){const o=document.querySelector("#template-loader").content.cloneNode(!0);e?document.body.append(o):document.querySelector("#loader").remove()}}export default Loader;

@@ -1,1 +1,0 @@
-import VisitCardiologist from"./VisitCardiologist.js";import VisitDentist from"./VisitDentist.js";import VisitTherapist from"./VisitTherapist.js";export function getVisitByDoctor(i,t,s){switch(i){case"cardiologist":return new VisitCardiologist(t,s);case"dentist":return new VisitDentist(t,s);case"therapist":return new VisitTherapist(t,s);default:return null}}
